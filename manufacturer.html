@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wholesalers</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="navigation">
+                <a href="index.html" class="logo">Wholesaler</a>
+                <div class="hb-button">
+                    <div class="hamburger"></div>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#actions">Sale</a></li>
+                    <li><a href="#boxes-6">Manufacturers</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- section manufacturer-products -->
+    <section id="manufacturer">
+        <div class="container">
+          <h1>Our Products</h1>
+          <div class="product">
+             <img src="https://source.unsplash.com/random/301x300" alt="">
+             <img src="https://source.unsplash.com/random/302x300" alt="">
+             <img src="https://source.unsplash.com/random/303x300" alt="">
+             <img src="https://source.unsplash.com/random/304x300" alt="">
+             <img src="https://source.unsplash.com/random/305x300" alt="">
+             <img src="https://source.unsplash.com/random/306x300" alt="">
+          </div>
+          <p class="product-p">If you like to buy our products contact us</p>
+        </div>
+    </section> 
+    
+    <!-- footer -->
+    <footer>
+     <div class="container">
+        <div class="footer-p">
+            <p>Copyright 2018&copy; All rights reserved - Design & Developed by <a href="" class="footer-link">Gjoko Bulovski</a></p>
+        </div>
+        <div class="social-3">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+        </div>
+     </div>
+    </footer>
+    
+    <!-- Back to top -->
+    <a href="#" id="scroll-top"><i class="fas fa-chevron-circle-up fa-2x"></i></a> 
+    
+    <!-- Java sript -->
+    <script type="text/javascript">
+          <!-- Hamburger menu -->
+          $(document).ready(function(){
+              $('.hb-button').on('click', function(){
+                 $('nav ul').toggleClass('show');
+                  $(this).toggleClass('show');
+              }); 
+           });
+        
+          <!-- scroll top-->
+          $(function () {  
+              var scrollButton = $('#scroll-top');
+              $(window).scroll(function() {
+                $(this).scrollTop() >= 400 ? scrollButton.show() : scrollButton.hide();
+              });
+              scrollButton.click(function() {
+                $('html,body').animate({ 
+                  scrollTop : 0 
+                }, 600);
+             });
+          });
+    </script>
+</body>
+</html>
